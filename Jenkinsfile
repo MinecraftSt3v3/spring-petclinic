@@ -19,10 +19,9 @@ pipeline {
         }
             steps {
                 echo 'Deploying....'
-  usernameVariable: 'user')]) {
-            sh 'curl -u ${user}:${pw} -X PUT "172.17.0.3:8081/artifactory/libs-release/spring-petclinic-2.7.0.jar" -T /home/alpuser/.jenkins/workspace/jenkins-pipeline_main/target/spring-petclinic-2.7.0.jar'
+
+            sh 'curl https://github.com/MinecraftSt3v3/spring-petclinic/blob/main/Jenkinsfile'
             }
         }
         }
     }
-}
