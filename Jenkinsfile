@@ -20,7 +20,9 @@ pipeline {
             steps {
                 echo 'Deploying....'
 
-            sh 'curl https://github.com/MinecraftSt3v3/spring-petclinic/blob/main/Jenkinsfile'
+            sh 'curl -u admin:password123 -X PUT \                                                                                                                                                                            You, 2022-09-26
+                "172.17.0.3:8081/artifactory/spring-clinic/spring-petclinic-2.7.0-SNAPSHOT.jar" \
+                -T "/home/alpuser/.jenkins/workspace/maven/target/spring-petclinic-2.7.0-SNAPSHOT.jar"'
             }
         }
         }
