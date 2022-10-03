@@ -1,8 +1,7 @@
 pipeline {
     agent any
-    environment {
-    ARTI_CRED_ID = credentials('arti-cred-id')
-    }
+    
+
     stages {
         stage('Build') {
             steps {
