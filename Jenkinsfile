@@ -6,7 +6,6 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-        echo env.BRANCH_NAME
         sh "./mvnw package"
             }
         }
