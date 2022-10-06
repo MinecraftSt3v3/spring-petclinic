@@ -12,7 +12,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo "hello deploy stage"
-                sh 'curl -u admin:password123 -XPUT "172.17.0.2:8081/artifactory/libs-release/spring-petclinic-2.7.0.jar" -T /home/alpuser/.jenkins/workspace/petclinic-pipeline_main/target/spring-petclinic-2.7.1.jar'
+                sh 'curl -u admin:password123 -XPUT "172.17.0.2:8081/artifactory/libs-release/spring-petclinic-2.7.0.jar" -T /home/newuser/.jenkins/workspace/petclinic-pipeline_main/target/spring-petclinic-2.7.1.jar'
             }
         }
     }
